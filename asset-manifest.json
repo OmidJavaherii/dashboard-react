@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/dashboard-react/static/css/main.b480e133.css",
+    "main.js": "/dashboard-react/static/js/main.687852f8.js",
+    "static/media/Lalezar-Regular.ttf": "/dashboard-react/static/media/Lalezar-Regular.241ca811c53de4ed36a4.ttf",
+    "index.html": "/dashboard-react/index.html",
+    "main.b480e133.css.map": "/dashboard-react/static/css/main.b480e133.css.map",
+    "main.687852f8.js.map": "/dashboard-react/static/js/main.687852f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b480e133.css",
+    "static/js/main.687852f8.js"
+  ]
+}
