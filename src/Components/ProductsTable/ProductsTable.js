@@ -150,6 +150,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
 
             {isShowDeleteModal && (
                 <DeleteModal
+                title = 'آیا از حذف اطمینان دارید؟'
                     submitAction={deleteModalSubmitAction}
                     cancelAction={deleteModalCancelAction}
                 />
@@ -172,6 +173,8 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                         </tr>
                     </tbody>
                 </table>
+                <button className='text-modal-close-btn'
+                    onClick={closeDetailsModal}>بستن</button>
             </DetailsModal>
             )}
             {isShowEditModal && (

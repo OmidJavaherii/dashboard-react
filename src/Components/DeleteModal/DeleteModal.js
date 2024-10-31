@@ -2,8 +2,7 @@ import React, {useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import './DeleteModal.css'
 
-export default function DeleteModal({ submitAction
-    , cancelAction }) {
+export default function DeleteModal({ submitAction, cancelAction, title }) {
 
         useEffect(() => {
             const checkKey = (event) => {
@@ -20,7 +19,7 @@ export default function DeleteModal({ submitAction
     return ReactDOM.createPortal(
         <div className='modal-parent active'>
             <div className="delete-modal">
-                <h1>آیا از حذف اطمینان دارید؟</h1>
+                <h1>{title}</h1>
                 <div className="delete-modal-btn">
                     <button className='delete-btn delete-modal-accept' onClick={() => submitAction()}>بله</button>
                     <button className='delete-btn delete-modal-reject' onClick={() => cancelAction()}>خیر</button>
