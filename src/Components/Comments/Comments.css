@@ -1,8 +1,3 @@
-.comment-btn {
-  display: flex;
-  justify-content: center;
-  column-gap: 5px;
-}
 .comment-body-textarea {
   margin-top: 20px;
   padding: 10px;

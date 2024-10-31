@@ -78,18 +78,16 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
     };
 
     return (
-        <>
+        <div className="cms-main">
+            <h1 className='cms-title'>لیست محصولات</h1>
             {allProducts.length ? (
-                <table className="products-table">
-                    <thead>
-                        <tr className="products-table-heading-tr">
-                            <th>عکس</th>
-                            <th>اسم</th>
-                            <th>قیمت</th>
-                            <th>موجودی</th>
-                        </tr>
+                <table className="cms-table products-table">
+                    <thead className="products-table-heading-tr">
+                        <th>عکس</th>
+                        <th>اسم</th>
+                        <th>قیمت</th>
+                        <th>موجودی</th>
                     </thead>
-
                     <tbody>
                         {allProducts.map((product) => (
                             <tr key={product.id} className="products-table-tr">
@@ -105,7 +103,6 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                                 <td>{product.count}</td>
                                 <td>
                                     <button
-                                        className="products-table-btn"
                                         onClick={() => {
                                             setIsShowDetailsModal(true)
                                             setMainProductInfos(product)
@@ -114,16 +111,6 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                                         جزییات
                                     </button>
                                     <button
-                                        className="products-table-btn"
-                                        onClick={() => {
-                                            setIsShowDeleteModal(true)
-                                            setProductId(product.id)
-                                        }}
-                                    >
-                                        حذف
-                                    </button>
-                                    <button
-                                        className="products-table-btn"
                                         onClick={() => {
                                             setIsShowEditModal(true)
                                             setMainProductInfos(product)
@@ -139,6 +126,15 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                                     >
                                         ویرایش
                                     </button>
+                                    <button
+                                        onClick={() => {
+                                            setIsShowDeleteModal(true)
+                                            setProductId(product.id)
+                                        }}
+                                    >
+                                        حذف
+                                    </button>
+
                                 </td>
                             </tr>
                         ))}
@@ -150,7 +146,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
 
             {isShowDeleteModal && (
                 <DeleteModal
-                title = 'آیا از حذف اطمینان دارید؟'
+                    title='آیا از حذف اطمینان دارید؟'
                     submitAction={deleteModalSubmitAction}
                     cancelAction={deleteModalCancelAction}
                 />
@@ -289,6 +285,6 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                     </div>
                 </EditModal>
             )}
-        </>
+        </div>
     );
 }

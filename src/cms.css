@@ -18,12 +18,17 @@
 }
 
 .cms-main {
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 20px;
   border-radius: 25px;
 }
+.cms-title {
+  font-weight: bold;
+  font-size: 4rem;
+}
 
 .cms-table {
+  text-align: center;
   margin-top: 20px;
   width: 100%;
   border-radius: 10px;
@@ -43,5 +48,6 @@
   background-color: var(--blue);
   color: var(--white);
   padding: 8px 15px;
+  margin: 0 5px;
   border-radius: 10px;
 }

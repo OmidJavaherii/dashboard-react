@@ -7,9 +7,10 @@
 
 .products-table-heading-tr {
     text-align: center;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 70px 0 460px;
+    padding: 20px 70px 0 370px;
 }
 
 .products-table-tr {
