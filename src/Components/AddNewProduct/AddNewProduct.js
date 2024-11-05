@@ -75,6 +75,7 @@ export default function AddNewProduct({ getAllProducts }) {
                             className='add-products-input'
                             value={newProductPrice}
                             onChange={(e) => setNewProductPrice(e.target.value)}
+                            min={0}
                         />
                     </div>
                     <div className="add-products-form-group">
@@ -84,6 +85,7 @@ export default function AddNewProduct({ getAllProducts }) {
                             className='add-products-input'
                             value={newProductCount}
                             onChange={(e) => setNewProductCount(e.target.value)}
+                            min={0}
                         />
                     </div>
                     <div className="add-products-form-group">
@@ -102,6 +104,7 @@ export default function AddNewProduct({ getAllProducts }) {
                             className='add-products-input'
                             value={newProductPopularity}
                             onChange={(e) => setNewProductPopularity(e.target.value)}
+                            min={0}
                         />
                     </div>
                     <div className="add-products-form-group">
@@ -111,12 +114,14 @@ export default function AddNewProduct({ getAllProducts }) {
                             className='add-products-input'
                             value={newProductSale}
                             onChange={(e) => setNewProductSale(e.target.value)}
+                            min={0}
                         />
                     </div>
                     <div className="add-products-form-group">
                         <AiOutlineFormatPainter />
                         <input type="number"
                             placeholder='تعداد رنگ بندی محصول را بنویسید'
+                             min={0}
                             className='add-products-input'
                             value={newProductColors}
                             onChange={(e) => setNewProductColors(e.target.value)}

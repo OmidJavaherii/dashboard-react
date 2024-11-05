@@ -5,11 +5,8 @@ import DeleteModal from '../DeleteModal/DeleteModal';
 export default function OffsTable({ allOffs, getAllOffs, getDate }) {
 
     const [isShowDeleteModal, setIsShowDeleteModal] = useState(false)
-    const [isShowEditModal, setIsShowEditModal] = useState(false)
     const [isShowSituationModal, setIsShowSituationModal] = useState(false);
     const [mainOffsID, setMainOffsID] = useState([])
-    const [offNewCode, setOffNewCode] = useState('')
-    const [offNewPercent, setoffNewPercent] = useState('')
     const [offNewIsActive, setoffNewIsActive] = useState('')
 
     const removeOffs = () => {
@@ -43,8 +40,6 @@ export default function OffsTable({ allOffs, getAllOffs, getDate }) {
     }
 
     const closeAcceptModal = () => setIsShowSituationModal(false);
-
-    const closeEditModal = () => setIsShowEditModal(false);
 
     return (
         <div className='cms-main'>
