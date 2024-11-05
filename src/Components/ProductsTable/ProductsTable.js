@@ -8,6 +8,7 @@ import ErrorBox from "../ErrorBox/ErrorBox";
 
 
 export default function ProductsTable({ allProducts, getAllProducts }) {
+    
     const [isShowDeleteModal, setIsShowDeleteModal] = useState(false);
     const [isShowDetailsModal, setIsShowDetailsModal] = useState(false);
     const [isShowEditModal, setIsShowEditModal] = useState(false);
