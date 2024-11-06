@@ -82,21 +82,20 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
         <div className="cms-main">
             <h1 className='cms-title'>لیست محصولات</h1>
             {allProducts.length ? (
-                <table className="cms-table products-table">
-                    <thead className="products-table-heading-tr">
+                <table className="cms-table">
+                    <thead className="product-table-tr special-heading-tr">
                         <th>عکس</th>
                         <th>اسم</th>
                         <th>قیمت</th>
                         <th>موجودی</th>
                     </thead>
-                    <tbody>
                         {allProducts.map((product) => (
-                            <tr key={product.id} className="products-table-tr">
+                            <tbody key={product.id} className="special-table-tr ">
                                 <td>
                                     <img
                                         src={product.img}
                                         alt={product.title}
-                                        className="products-table-img"
+                                        className="special-img"
                                     />
                                 </td>
                                 <td>{product.title}</td>
@@ -137,9 +136,8 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                                     </button>
 
                                 </td>
-                            </tr>
+                            </tbody>
                         ))}
-                    </tbody>
                 </table>
             ) : (
                 <ErrorBox msg="هیچ محصولی یافت نشد" />

@@ -1,52 +1,7 @@
-.products-table {
-    margin-top: 30px;
-    width: 100%;
-    background-color: var(--white);
-    border-radius: 10px;
+.product-table-tr{
+    padding-left: 300px;
+    padding-right: 40px;
 }
-
-.products-table-heading-tr {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 70px 0 370px;
-}
-
-.products-table-tr {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px 0 30px;
-}
-
-.products-table th {
-    padding: 20px;
-}
-
-.products-table td {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-}
-
-.products-table-img {
-    width: 150px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.products-table-btn {
-    padding: 8px 20px;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    color: var(--white);
-    background-color: var(--blue);
-    margin-right: 20px;
-}
-
-
-/* Start Edit Modal Childs Style */
 
 .edit-proructs-form-group {
     margin-top: 15px;
