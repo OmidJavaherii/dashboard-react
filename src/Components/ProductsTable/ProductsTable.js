@@ -177,7 +177,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                     onClose={() => setIsShowEditModal(false)}
                     onSubmit={updateProductInfos}
                 >
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineAlignRight />
                         </span>
@@ -192,7 +192,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineDollarCircle />
                         </span>
@@ -207,7 +207,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineBarcode />
                         </span>
@@ -222,7 +222,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineCamera />
                         </span>
@@ -237,7 +237,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineSmile />
                         </span>
@@ -252,7 +252,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineFire />
                         </span>
@@ -267,7 +267,7 @@ export default function ProductsTable({ allProducts, getAllProducts }) {
                             }}
                         />
                     </div>
-                    <div className="edit-proructs-form-group">
+                    <div className="edit-products-form-group">
                         <span>
                             <AiOutlineFormatPainter />
                         </span>

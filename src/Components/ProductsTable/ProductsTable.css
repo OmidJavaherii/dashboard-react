@@ -1,9 +1,9 @@
 .product-table-tr{
     padding-left: 300px;
-    padding-right: 40px;
+    padding-right: 40px !important;
 }
 
-.edit-proructs-form-group {
+.edit-products-form-group {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     padding: 8px 10px;
 }
 
-.edit-proructs-form-group p {
+.edit-products-form-group p {
     padding: 0 2px;
     font-size: 0.8rem;
 }
