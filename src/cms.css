@@ -1,3 +1,4 @@
+/* modals */
 .modal-parent {
   position: fixed;
   z-index: 2;
@@ -11,13 +12,15 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.4s;
-  overflow: scroll;
+  overflow: hidden;
+  /* overflow: scroll; */
 }
 .modal-parent.active {
   opacity: 1;
   visibility: visible;
 }
 
+/* cms */
 .cms-main {
   margin-top: 20px;
   padding: 20px;

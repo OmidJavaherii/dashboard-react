@@ -15,7 +15,7 @@ export default function Sidebar() {
 
             <ul className="sidebar-links">
 
-                <NavLink to='/'>
+                <NavLink to='/home'>
                     <AiOutlineHome className='icon' />
                     صفحه اصلی
                 </NavLink>

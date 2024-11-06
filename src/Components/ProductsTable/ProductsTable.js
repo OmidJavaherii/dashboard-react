@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./ProductsTable.css";
 import DeleteModal from "./../DeleteModal/DeleteModal";
 import DetailsModal from "./../DetailsModal/DetailsModal";
 import EditModal from "./../EditModal/EditModal";
 import { AiOutlineDollarCircle, AiOutlineAlignRight, AiOutlineCamera, AiOutlineBarcode, AiOutlineSmile, AiOutlineFire, AiOutlineFormatPainter } from "react-icons/ai";
 import ErrorBox from "../ErrorBox/ErrorBox";
+import "./ProductsTable.css";
 
 
 export default function ProductsTable({ allProducts, getAllProducts }) {
