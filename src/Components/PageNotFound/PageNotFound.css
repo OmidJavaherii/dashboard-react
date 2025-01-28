@@ -7,7 +7,7 @@
   line-height: 1;
 }
 .top-header:before {
-  background-image: src("./img/header-footer-gradient-bg.png");
+  background-image: url("header-footer-gradient-bg.png");
 }
 .top-header:before {
   content: "";
